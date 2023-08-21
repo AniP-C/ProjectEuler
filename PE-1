@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    
+    int n =1000;
+    vector <int> arr;
+    for (int i = 1 ; i < n ; i++){
+        if (i%3 ==0 || i%5==0 ){
+            arr.push_back(i);
+            
+            
+        }
+        
+        
+    }
+    // cout << arr[1];
+    int summ = accumulate(arr.begin(), arr.end(), 0);
+// for (auto elem : arr){
+// cout << elem<< endl;
+// }    
+    cout << summ;
+    
+    
+    
+}
